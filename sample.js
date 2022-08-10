@@ -7,6 +7,9 @@ var grid = new ej.grids.Grid({
     allowFiltering: true,
     editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true},
     filterSettings: { type: 'Excel' },
+    keyPressed: function () {
+        debugger;
+    },
     toolbar: [{ text: 'Search'}, 'Add', 'Edit', 'Delete', 'Update', 'Cancel'],
     columns: [
       {field: 'OrderID',headerText: 'Order ID',width: 120,isPrimaryKey: true},
